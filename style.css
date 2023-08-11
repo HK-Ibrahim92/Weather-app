@@ -1,0 +1,152 @@
+html{
+    font-size: 62%;
+}
+body{
+    background-size: cover; /* This makes the background image cover the entire body */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Set the width of the body */
+    height: 100vh; /* Set the height of the body to viewport height */
+    margin: 0; /* Remove default margin */
+  }
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+}
+.main{
+    background-color: black;
+    font-family: cursive;
+        color: aliceblue;
+        padding: 1.5rem;
+        font-size: large;
+
+}
+#line1{
+    font-size: 9rem;
+}
+.main ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.body{
+    background-color: slategrey;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+#search{
+    padding: 1rem;
+    padding-left: 5rem;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+#sub{
+    padding: 0.5rem;
+    font-family: cursive;
+    
+}
+.info{
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+.info ul li{
+list-style-type: none;  
+font-size: xx-large;  
+
+font-weight: bolder;
+}
+#center{
+    background-color: lightsteelblue;
+    /* transform: translate(-50%, -50%); */
+    top: 50%;
+  left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3rem;
+    
+}
+.current{
+    display: flex;
+    justify-content: space-between;
+margin: 1.5rem;
+font-size: large;
+font-weight: bolder;
+}
+@media screen and (max-width:280px){
+    #center{
+        margin: 1rem;
+        
+    }
+    #line1{
+        font-size: 4rem;
+    }
+    #search{
+        padding: 1rem;
+        
+    }
+}
+@media screen and (max-width:700px){
+    #center{
+        margin: 7rem;   
+    }
+    #search{
+        padding-left: 0.3rem;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width:900px){
+    #center{
+        margin: 8rem;
+    }
+}
+
+@media screen and (min-width:1000px){
+    #center{
+        margin: 20rem;
+    }
+    .main{
+        font-size: x-large;
+    }
+    #image{
+        height: 8rem;
+    }
+}
+
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+    opacity: 0.8;  
+}
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    font-size: 1rem;
+    
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .weather-card {
+      width: calc(50% - 20px);
+    }
+  }

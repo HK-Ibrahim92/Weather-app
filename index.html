@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="main">
+<ul>
+    <li><img id="image" height="50px" src="./images.jfif" alt=""></li>
+    <li><h1>Weather Station</h1> </li>
+    <li><h1></h1></li>
+    
+</ul>
+</div>
+<div class="weather-cards" id="weatherCards">
+       
+      <div id="center">
+    <div class="current">
+        <p>Current Weather</p>
+        <p id="date"></p>
+    
+    </div>
+
+    <div class="input">
+        <input type="search" name="search" id="search" placeholder="Enter City Name......">
+
+    </div>
+<div class="submit">
+    <input id="sub" onclick="nio(); handleSearch();
+    " onclick="style()"  type="submit" value="Search" >
+</div>
+<div class="info">
+    <ul>
+        <li id="city"></li>
+        <li id="line1"></li>
+        <li id="line3"></li>
+        <li id="line4"></li>
+        <li id="line2"></li>
+            </ul>
+</div>
+      </div>
+
+       <!-- Weather cards will be dynamically added here -->
+      </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
