@@ -28,13 +28,14 @@ async function nio(cityName) {
       console.log(data)
 
       info.innerHTML = (data.main.temp + "℃")
+
       info5.innerHTML = ("Humidity :" + data.main.humidity + "%")
       info2.innerHTML = (data.weather[0].main)
       info3.innerHTML = ("Feel :" + data.main.feels_like + "℃")
       
       info4.innerHTML = ("Wind:" + data.wind.speed + "km/h")
       let upper = cityName.toUpperCase()
-      city.innerHTML = (upper)
+      city.innerHTML = (upper+"       ("+data.sys.country+")")
       weather = info2.innerHTML
       console.log(weather)
       console.log(data.main.temp + "℃")
